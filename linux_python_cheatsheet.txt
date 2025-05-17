@@ -1,0 +1,76 @@
+==========================
+🐧 Linux Commands Cheat Sheet for Python Work
+==========================
+
+📁 FILE & DIRECTORY NAVIGATION
+--------------------------------
+pwd                        # Show current path
+ls                         # List files
+ls -la                     # List all files with details
+cd folder/                 # Enter folder
+cd ..                      # Go up one directory
+mkdir new_folder           # Create new folder
+rm file.py                 # Delete a file
+rm -r folder/              # Delete folder recursively
+
+📄 PYTHON FILE HANDLING
+-----------------------------
+touch script.py            # Create empty Python file
+nano script.py             # Edit file in terminal
+cat script.py              # View file content
+python3 script.py          # Run script
+chmod +x script.py         # Make script executable
+./script.py                # Run script directly (with shebang)
+
+🐍 PYTHON ENVIRONMENT
+-----------------------------
+python3 --version          # Check Python version
+pip3 install package       # Install package
+pip3 list                  # List installed packages
+python3 -m venv env        # Create virtual environment
+source env/bin/activate    # Activate venv
+deactivate                 # Deactivate venv
+
+🔍 SEARCH & MONITOR
+-----------------------------
+grep "term" script.py      # Search term in file
+find . -name "*.py"        # Find Python files
+head file.py               # Show first lines
+tail -f output.log         # Monitor log file live
+
+🛠️ SYSTEM TOOLS
+-----------------------------
+which python3              # Path to Python binary
+echo $PATH                 # Show environment paths
+clear                      # Clear terminal
+history                    # Show recent commands
+exit                       # Close terminal
+
+🧪 OPTIONAL UTILITIES
+-----------------------------
+htop                       # Process viewer (needs install)
+cron                       # Job scheduler (for automation)
+alias rpy="python3 script.py"   # Set alias for command
+
+
+GitHub work;
+Switching accounts;
+
+Create a new file for your ssh key with different file name;
+ssh-keygen -t ed25519 -C "newemail@example.com" -f ~/.ssh/id_ed25519_alt
+
+Configure with this;
+Host github-alt
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_alt
+
+Test connection;
+ssh -T git@github-alt
+
+
+Setting up ssh config;
+nano ~/.ssh/config
+
+Clone using alt Ssh key (Note the different host name)
+git clone git@github-alt:Honey-abdurahman/Linux_prac.git
